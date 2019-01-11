@@ -130,7 +130,7 @@ window.onload = function() {
 			// Bottom credits
 			c.fillStyle = "black";
 			c.font = "15px Arial";
-			c.fillText("SplatCraft v" + version + " | Created by PetaByte Studios", 10, canvas.height - 10);
+			c.fillText("SplatCraft v" + version + " | Created by Petabyte Studios | Last update: Jan 11th, 2019", 10, canvas.height - 10);
 		} else {
 			draw();
 
