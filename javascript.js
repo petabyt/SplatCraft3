@@ -169,20 +169,10 @@ window.onload = function() {
 				text = text.replace(/&[0-9]/g,"");
 				c.fillText(text, 10, (i + 1) * 20);
 			}
-			//c.fillText("UP: " + player.touchingUp + " DOWN: " + player.touchingDown + " RIGHT: " + player.touchingRight + " LEFT: " + player.touchingLeft, 10, (4) * 20);
+
 			// Background color
 			canvas.style.backgroundColor = "rgb(190, 231, 241)";
 
-			// Signs
-			// if (hoverBlock.id == "a") {
-			// 	for (var i = 0; i < worldData.length; i++) {
-			// 		var split = worldData[i];
-			// 		c.fillText(split, mouseX, mouseY);
-			// 		console.log();
-			// 	}
-			// }
-
-			// 
 			if (paused) {
 				c.drawImage(background, 0, 0, canvas.width + 100, canvas.height + 100);
 				c.strokeStyle = "black";
@@ -280,13 +270,6 @@ function generate() {
 			} else {
 				stone--
 			}
-		} else {
-			// Dirt
-			// if (a == 2 || !dirt > 1) {
-			// 	dirt++
-			// } else {
-			// 	dirt--
-			// }
 		}
 	}
 }
@@ -430,10 +413,6 @@ function clicked() {
 			split[hoverBlock.yPos] = "0";
 		}
 		world[hoverBlock.xPos] = split.join("");
-		// if (currentBlock == "a") {
-		// 	var signText = prompt("Enter some text for the sign.");
-		// 	worldData += "|" + hoverBlock.xPos + "|" + hoverBlock.yPos + "|" + signText + "-";
-		// }
 	} else {
 		if (startButtonHover) {
 			// Generate the world
@@ -462,7 +441,8 @@ function clicked() {
 				}
 			}
 		} else if (settingsButtonHover) {
-			document.getElementById('settings').style.display = "block";
+			// Change this when finished
+			// document.getElementById('settings').style.display = "block";
 		}
 	}
 }
