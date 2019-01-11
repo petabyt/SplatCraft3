@@ -169,7 +169,7 @@ window.onload = function() {
 				text = text.replace(/&[0-9]/g,"");
 				c.fillText(text, 10, (i + 1) * 20);
 			}
-
+			
 			// Background color
 			canvas.style.backgroundColor = "rgb(190, 231, 241)";
 
@@ -440,9 +440,6 @@ function clicked() {
 					gameStarted = true;
 				}
 			}
-		} else if (settingsButtonHover) {
-			// Change this when finished
-			// document.getElementById('settings').style.display = "block";
 		}
 	}
 }
