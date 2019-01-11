@@ -9,7 +9,7 @@ var worldRules = {
 	height:100,
 	mode:"creative",
 	fancyGraphics:true,
-	assetDir:"minecraft"
+	assetDir:"assets"
 };
 
 // Player Stuff (Don't change this)
